@@ -1,6 +1,56 @@
+body {
+    font-family: italic;
+    font-style: italic;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
 .myDiv {
-border: 5px outset black;
 background-color: lightblue;
 text-align: center;
-padding
+padding: 20px;
+margin: 20px auto;
+width: 80%;
+border-radius: 10px;
 }
+
+.mydiv img {
+display: block;
+margin: 0 auto; /* centers horizontally */
+max-width: 100%; /* optional: makes image responsive */
+height: auto;    /* keeps aspect ratio */
+}
+
+.price-table table {
+    width: 70%;
+    margin: auto;
+    background-color: fff;
+    padding: 20px;
+    border-collapse: collapse;
+}   
+
+.price-table th, .price-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.price-table th {
+    background-color: light-gray;
+    font-weight: bold;
+}
+.price-table tr::nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.contact-info a {
+    color: blue;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}   
