@@ -1,100 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniloper | Futuristic Cars</title>
 
-    <title> Cars Model </title>
-    <meta charset="UTF-8">
-    <meta name="description" content="width-device-width, initial-scale=1">
-    <title>Cars Model | Danielle </title>
-     <link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Title -->
-    <h1> <em> Car Sports </em> </h1>
 
-    <!-- navbar -->
-    <nav>
-      <div class="nav_header">
-        <div class="nav_logo">
-          
-    <!-- Price Section -->
-      <div class="price-table">
-      <table>
-        <tr>
-          <th> Car Model </th>
-          <th> Price </th>
-        </tr>
-        <tr>
-          <td> Toyota Supra </td>
-          <td> $600k </td>
-        </tr>
-        <tr>
-          <td> Ferrari </td>
-          <td> $600k </td>
-        </tr>
-        <tr>
-          <td> Lamborghini </td>
-          <td> $700k </td>
-        </tr>
-      </table>
-      </div>
+<!-- Background Video -->
+<video autoplay muted loop id="bgVideo">
+  <source src="assets/323622_medium.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
-    <!--Supra Car Section-->
-    <div class="myDiv"> 
-    <h2> Toyota Supra </h2>
-    <p><em> <q>This is supra satin purple wrapped year 2020. </em></q></p>
-    <p><em>Price: $600K</em></p>
-    <img src="supra.jpg" alt="" width="500">
- </div>
-    <!-- Ferrari Section -->
-     <div class="myDiv"> 
-     <h2> Ferrari </h2>
-     <p><em> <q>This is ferrari year 2020 wrapped in glossy red</em> </q></p>
-     <p> <em>Price: $600K</em></p>
-   <img src="OIP.webp" alt="" width"500"> 
-      </div>
+<!-- Header & Navbar -->
+<header class="header">
+  <a href="#home" class="logo">DANILOPER</a>
 
-    <!-- Lamborghini Section -->
-     <div class="myDiv"> 
-     <h2> <em> Lamborghini</em> </h2>
-     <p><em> <q>This is Lamborghini year 2020 wrapped in glossy yellow</em> </q></p>
-     <p> <em>Price: $700K</em></p>
-   <img src="hero.webp" alt="" width="500">
-     </div>
+  <nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#models">Models</a>
+    <a href="#performance">Performance</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-         <!-- Dropdown Section -->
-  <label for="cars">cars:</label>
-  <select id="cars" name="cars">
-  <option value="ferrari">ferrari</option>
-  <option value="supra">supra</option>
-  <option value="Lamborghini">Lamborghini</option>
-</select>
-<br>
-<br>
-     <!-- Shipping Address Section -->
-     <fieldset>
-  <legend>Shipping Address</legend>
-  <label for="address">Address:</label>
-  <input type="text" id="address" name="address">
-  <br>
-  <label for="city">City:</label>
-  <input type="text" id="city" name="city">
-  <br>
-  <label for="zip-code">ZIP Code:</label>
-  <input type="text" id="zip-code" name="zip-code">
-  <br>
-  <br>
-  <button onclick"Saved Address"> Save Address </button>
-</fieldset>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
 
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#models">Models</a>
+  <a href="#performance">Performance</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</div>
 
-    <!-- Contact Section -->
-    <h2> Contact Me </h2>
-    <div class="contact-info">
-<a href="https://www.facebook.com/patrick.cruz.5950">Facebook</a>
-<br>
-<a href="https://mail.google.com/mail/u/0/#inbox">Email</a>
-      <div>
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Drive the Future</h1>
+    <p>Experience cutting-edge speed, technology, and luxury in every Daniloper model.</p>
+    <div class="hero-actions">
+      <button class="btn primary">Explore Models</button>
+      <button class="btn secondary">Book Test Drive</button>
     </div>
+  </div>
+</section>
+
+<!-- Car Models Section -->
+<section id="models" class="models-section">
+  <h2>Our Futuristic Models</h2>
+  <div class="models-container">
+    <div class="model-card">
+      <div class="model-image" style="background-image: url('assets/supra.jpg');"></div>
+      <h3>Supra X Concept</h3>
+      <p>Electric hypercar with neon-lit chassis and 0-60 in 2.5s. Futuristic design meets performance.</p>
+    </div>
+
+    <div class="model-card">
+      <div class="model-image" style="background-image: url('assets/ferrari.jpg');"></div>
+      <h3>Ferrari Neo</h3>
+      <p>Next-gen luxury supercar with Tron-inspired aerodynamic body and advanced AI driving support.</p>
+    </div>
+
+    <div class="model-card">
+      <div class="model-image" style="background-image: url('assets/lamborghini.webp');"></div>
+      <h3>Lamborghini Volt</h3>
+      <p>Ultra-fast electric sports car with glowing rims, cyber aesthetics, and top-tier performance stats.</p>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
