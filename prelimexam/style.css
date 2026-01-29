@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    
+}
+
+* h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+#main {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(24, 10, 10, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #581c1c;
+    border-radius: 4px;
+    box-sizing: border-box; /* Crucial for keeping inputs within their container */
+}
+
+button {
+    margin-top: 20px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Uniform Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main">
+        <header>
+            <h1 id="title">School Uniform Survey</h1>
+            <p id="description">Your feedback matters!</p>
+        </header>
+        <br>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Student ID Number:</label>
+                <input type="number" id="number" min="0" max="500" placeholder="Enter your ID number"> <br>
+
+                <button> Submit </button>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="dropdown">Are you aware that TIP is implementing new uniforms?</label>
+                <select id="dropdown">
+                    <option disabled selected value>Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <p>Are you okay with a new uniform implementation?</p>
+                <label class="inline-label">
+                    <input name="recommend" value="definitely" type="radio" checked> Definitely
+                </label>
+                <label class="inline-label">
+                    <input name="recommend" value="maybe" type="radio"> Maybe
+                </label>
+                <label class="inline-label">
+                    <input name="recommend" value="not-sure" type="radio"> Not sure
+                </label>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <p>Which parts of the current design of uniform should stay? </p>
+                <label class="inline-label">
+                    <input value="color" type="checkbox"> The Color Scheme</label>
+
+                <label class="inline-label">
+                    <input value="fabric" type="checkbox"> The Fabric </label>
+
+
+                <label class="inline-label">
+                    <input value="logo" type="checkbox"> The School Logo </label>
+            </div>
+        
